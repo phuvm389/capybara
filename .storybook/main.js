@@ -15,6 +15,11 @@ module.exports = {
     name: '@storybook/html-webpack5',
     options: {},
   },
+  staticDirs: [
+    { from: '../assets', to: '/assets' },
+    { from: '../dist', to: '/dist' },
+    { from: './drupal', to: '/drupal' },
+  ],
   docs: {
     autodocs: true,
   },

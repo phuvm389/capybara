@@ -2,9 +2,10 @@
 
 .block-example {
   background-color: red;
+  background-image: url("../../../assets/images/logo.png");
   margin: 0;
 
-  @include breakpoint('desktop') {
+  @include breakpoint(desktop) {
     margin: 0 $space-double 0 0;
   }
 }

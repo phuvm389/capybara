@@ -7,11 +7,16 @@
 */
 
 // Fonts
-$font-body: georgia, times, 'Times New Roman', serif;
-$font-heading: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+$font-body: 'Open Sans', serif;
+$font-heading: 'Open Sans', serif;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$container-width: rem(1020px);
 
 // Spacing
-$space: 1rem;
+$space: rem(20px);
 
 // Times
 $space-double: calc($space * 2);
@@ -30,7 +35,13 @@ $space-one-sixth: calc($space / 6);
 $space-one-seventh: calc($space / 7);
 $space-one-eighth: calc($space / 8);
 
-$primary-color: red;
+$blue: #0ca4a5;
+$blue-e3: #e3ffff;
+$purple: #7058f5;
+$purple-f0: #f0f1fe;
+$color-primary: $blue;
+$color-secondary: $purple;
+$color-text: #1c1e26;
 
 /*
  * Use this on the outer wrapper of page-level elements.

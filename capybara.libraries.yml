@@ -3,9 +3,9 @@ global:
     theme:
       dist/css/style.css: {}
 
-main-menu:
+block-example:
   js:
-    dist/js/02-molecules/menus/main-menu/main-menu.js: {}
+    dist/js/02-molecules/block-example/block-example.js: {}
   dependencies:
     - core/drupal
 

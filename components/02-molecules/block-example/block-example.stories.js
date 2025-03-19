@@ -4,6 +4,7 @@ import blockExampleItemTwig from './block-example-item.twig';
 import pictureTwig from '../../01-atoms/picture/picture.twig';
 import blockExampleData from './block-example.json';
 import './block-example.scss';
+import './block-example';
 
 /**
  * Storybook Definition.
@@ -33,3 +34,6 @@ const defaultData = {
 
 export const blockExample = () =>
   blockExampleTwig({ blockExample: defaultData });
+
+export const blockExample2 = () =>
+  blockExampleTwig({ blockExample: { ...defaultData, class: 'testabc' } });

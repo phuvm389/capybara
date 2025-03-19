@@ -13,19 +13,19 @@ $desktop-superwide: 1440px;
 
 // Breakpoint function
 $breakpoints: (
-  'mobile-landscape': (
+  mobileLandscape: (
     min-width: #{$mobile-landscape},
   ),
-  'tablet': (
+  tablet: (
     min-width: #{$tablet},
   ),
-  'desktop': (
+  desktop: (
     min-width: #{$desktop},
   ),
-  'desktop-wide': (
+  desktopWide: (
     min-width: #{$desktop-wide},
   ),
-  'desktop-superwide': (
+  desktopSuperwide: (
     min-width: #{$desktop-superwide},
   ),
 );

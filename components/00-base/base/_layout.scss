@@ -1,0 +1,26 @@
+// LAYOUT
+// This is the main layout file.
+// This file should be used to define the primary page layout that each of the page types will be extending.
+// This includes global styles for html, body, etc.
+
+//Enable font-smoothing
+html {
+  font-size: $base-font-size; // Don't modify static unit.
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+body {
+  font-family: $font-body;
+  font-size: rem(18px);
+}
+
+.container {
+  margin-inline: rem(15px);
+
+  @include breakpoint(desktop) {
+    margin-inline: auto;
+    max-width: $container-width;
+  }
+}
