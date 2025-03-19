@@ -1,0 +1,11 @@
+<picture>
+  {% if picture.srcDesktop %}
+    <source media="all and (min-width: 1024px)" srcset="{{ picture.srcDesktop }}">
+  {% endif %}
+  {% if picture.srcTablet %}
+    <source media="all and (min-width: 768px)" srcset="{{ picture.srcTablet }}">
+  {% endif %}
+  {% if picture.src %}
+    <img src="{{ picture.src }}" alt="{{ picture.alt }}">
+  {% endif %}
+</picture>

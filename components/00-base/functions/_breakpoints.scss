@@ -1,0 +1,46 @@
+/**
+ * Breakpoint Configuration
+ * @see https://github.com/Team-Sass/breakpoint/wiki
+ *
+ */
+
+//Breakpoints
+$mobile-landscape: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-wide: 1280px;
+$desktop-superwide: 1440px;
+
+// Breakpoint function
+$breakpoints: (
+  'mobile-landscape': (
+    min-width: #{$mobile-landscape},
+  ),
+  'tablet': (
+    min-width: #{$tablet},
+  ),
+  'desktop': (
+    min-width: #{$desktop},
+  ),
+  'desktop-wide': (
+    min-width: #{$desktop-wide},
+  ),
+  'desktop-superwide': (
+    min-width: #{$desktop-superwide},
+  ),
+);
+
+/// Mixin to manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints map
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    /* stylelint-disable-next-line */
+    @error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

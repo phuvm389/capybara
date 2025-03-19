@@ -1,0 +1,15 @@
+capybara.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+capybara.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+capybara.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+capybara.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+capybara.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'

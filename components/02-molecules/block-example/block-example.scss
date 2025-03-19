@@ -1,0 +1,10 @@
+@import '../../00-base/functions/functions-import';
+
+.block-example {
+  background-color: red;
+  margin: 0;
+
+  @include breakpoint('desktop') {
+    margin: 0 $space-double 0 0;
+  }
+}
