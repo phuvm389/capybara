@@ -1,0 +1,31 @@
+@import '../../00-base/functions/functions-import';
+
+.hero {
+  padding-block: 50px;
+
+  @include breakpoint(tablet) {
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  @include breakpoint(desktop) {
+    padding-block: 80px;
+  }
+
+  &__links,
+  &__title {
+    text-align: center;
+  }
+
+  &__body {
+    @include text--large;
+  }
+
+  &__links {
+    margin-top: $space;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: rem(10px);
+  }
+}

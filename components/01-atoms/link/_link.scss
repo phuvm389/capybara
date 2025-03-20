@@ -9,3 +9,34 @@ a {
     text-underline-offset: rem(12px);
   }
 }
+
+.btn {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  justify-content: center;
+  gap: rem(5px);
+  border: none;
+  border-radius: rem(20px);
+  font-weight: 700;
+  color: $color-primary;
+  background-color: $blue-e3;
+  padding: 10px 20px;
+  font-size: rem(16px);
+  min-width: rem(180px);
+
+  &:hover {
+    box-shadow: 0 0 1px 7px rgba($color-primary, 0.3);
+  }
+
+  &--secondary {
+    color: $color-secondary;
+    background-color: $purple-f0;
+
+    &:hover {
+      box-shadow: 0 0 1px 7px rgba($color-secondary, 0.3);
+    }
+  }
+}
