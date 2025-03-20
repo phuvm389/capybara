@@ -6,4 +6,14 @@ import linkData from './link.json';
  */
 export default { title: 'Atoms/Button' };
 
-export const link = () => linkTwig(linkData);
+// Default button story.
+export const link = {
+  render: (args) => linkTwig(args),
+  args: { ...linkData },
+  argTypes: {
+    class: {
+      options: ['primary', 'secondary'],
+      control: { type: 'select' },
+    },
+  },
+};

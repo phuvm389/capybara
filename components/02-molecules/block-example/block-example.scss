@@ -2,7 +2,7 @@
 
 .block-example {
   background-color: red;
-  background-image: url("../../../assets/images/logo.png");
+  background-image: url('../../../assets/images/logo.png');
   margin: 0;
 
   @include breakpoint(desktop) {

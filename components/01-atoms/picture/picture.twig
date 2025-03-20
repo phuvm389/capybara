@@ -1,11 +1,11 @@
 <picture>
-  {% if picture.srcDesktop %}
-    <source media="all and (min-width: 1024px)" srcset="{{ picture.srcDesktop }}">
+  {% if srcDesktop %}
+    <source media="all and (min-width: 1024px)" srcset="{{ srcDesktop }}">
   {% endif %}
-  {% if picture.srcTablet %}
-    <source media="all and (min-width: 768px)" srcset="{{ picture.srcTablet }}">
+  {% if srcTablet %}
+    <source media="all and (min-width: 768px)" srcset="{{ srcTablet }}">
   {% endif %}
-  {% if picture.src %}
-    <img src="{{ picture.src }}" alt="{{ picture.alt }}">
+  {% if src %}
+    <img src="{{ src }}" alt="{{ alt }}">
   {% endif %}
 </picture>

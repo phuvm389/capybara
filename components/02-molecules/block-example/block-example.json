@@ -1,44 +1,32 @@
 {
-  "blockExample": {
-    "items": [
-      {
-        "blockExampleItem": {
-          "counter": "350",
-          "character": "+",
-          "name": "Employees",
-          "image": {
-            "picture": {
-              "srcDesktop": "https://picsum.photos/200/200",
-              "srcTablet": "https://picsum.photos/150/150",
-              "src": "https://picsum.photos/50/50",
-              "alt": "Picture"
-            }
-          }
-        }
-      },
-      {
-        "blockExampleItem": {
-          "counter": "20",
-          "character": "+",
-          "name": "Patents",
-          "image": {
-            "picture": {
-              "srcDesktop": "https://picsum.photos/200/200",
-              "srcTablet": "https://picsum.photos/150/150",
-              "src": "https://picsum.photos/50/50",
-              "alt": "Picture"
-            }
-          }
-        }
+  "items": [
+    {
+      "counter": "350",
+      "character": "+",
+      "name": "Employees",
+      "image": {
+        "srcDesktop": "https://picsum.photos/200/200",
+        "srcTablet": "https://picsum.photos/150/150",
+        "src": "https://picsum.photos/50/50",
+        "alt": "Picture"
       }
-    ],
-    "image": {
-      "picture": {
-        "srcDesktop": "https://picsum.photos/1920/610",
-        "srcTablet": "https://picsum.photos/1024/610",
-        "src": "https://picsum.photos/768/430",
+    },
+    {
+      "counter": "20",
+      "character": "+",
+      "name": "Patents",
+      "image": {
+        "srcDesktop": "https://picsum.photos/200/200",
+        "srcTablet": "https://picsum.photos/150/150",
+        "src": "https://picsum.photos/50/50",
         "alt": "Picture"
       }
     }
+  ],
+  "image": {
+    "srcDesktop": "https://picsum.photos/1920/610",
+    "srcTablet": "https://picsum.photos/1024/610",
+    "src": "https://picsum.photos/768/430",
+    "alt": "Picture"
   }
 }

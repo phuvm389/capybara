@@ -1,9 +1,9 @@
-<div class="block-example {{ blockExample.class }}">
+<div class="block-example {{ variants }}">
   <div class="container">
     test
-    <div class="block-example__grid">{{ blockExample.items }}</div>
-    {% if blockExample.image is not empty %}
-      <span class="block-example__image">{{ blockExample.image }}</span>
+    <div class="block-example__grid">{{ items }}</div>
+    {% if image is not empty %}
+      <span class="block-example__image">{{ image }}</span>
     {% endif %}
   </div>
 </div>

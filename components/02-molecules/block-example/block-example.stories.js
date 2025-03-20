@@ -9,31 +9,42 @@ import './block-example';
 /**
  * Storybook Definition.
  */
-export default { title: 'Atoms/Block Example' };
+export default { title: 'Molecules/Block Example' };
 // Decorate items to makrup.
-let blockExampleItemsData = [];
-blockExampleData.blockExample.items.forEach((item) => {
-  const { blockExampleItem } = item;
-  if (blockExampleItem.image) {
-    blockExampleItem.image = pictureTwig(blockExampleItem.image);
+let itemsData = [];
+blockExampleData.items.forEach((item) => {
+  let image = '';
+  if (item.image) {
+    image = pictureTwig(item.image);
   }
-  blockExampleItemsData = [
-    ...blockExampleItemsData,
+  itemsData = [
+    ...itemsData,
     {
-      content: () => blockExampleItemTwig({ blockExampleItem }),
+      content: () => blockExampleItemTwig({ ...item, image }),
     },
   ];
 });
+
 // Decorate default data.
 const defaultData = {
-  image: pictureTwig(blockExampleData.blockExample.image),
+  image: pictureTwig(blockExampleData.image),
   items: blockExampleItemsTwig({
-    items: blockExampleItemsData,
+    items: itemsData,
   }),
 };
 
-export const blockExample = () =>
-  blockExampleTwig({ blockExample: defaultData });
+// Show controls.
+export const blockExample = {
+  render: (args) => blockExampleTwig(args),
+  args: { ...defaultData },
+  argTypes: {
+    variants: {
+      options: ['block-example--variant-1', 'block-example--variant-2'],
+      control: { type: 'select' },
+    },
+  },
+};
 
+// Don't show controls.
 export const blockExample2 = () =>
-  blockExampleTwig({ blockExample: { ...defaultData, class: 'testabc' } });
+  blockExampleTwig({ ...defaultData, variants: 'block-example--variant-1' });

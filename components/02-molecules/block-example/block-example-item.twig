@@ -1,14 +1,14 @@
-{% if blockExampleItem.image is not empty %}
-  <span class="block-example__image">{{ blockExampleItem.image }}</span>
+{% if image is not empty %}
+  <span class="block-example__image">{{ image }}</span>
 {% endif %}
 <span class="block-example__content">
-  {% if blockExampleItem.counter is not empty %}
-    <span class="block-example__counter js-block-example__counter">{{ blockExampleItem.counter }}</span>
+  {% if counter is not empty %}
+    <span class="block-example__counter js-block-example__counter">{{ counter }}</span>
   {% endif %}
-  {% if blockExampleItem.character is not empty %}
-    <span class="block-example__character">{{ blockExampleItem.character }}</span>
+  {% if character is not empty %}
+    <span class="block-example__character">{{ character }}</span>
   {% endif %}
 </span>
-{% if blockExampleItem.name is not empty %}
-  <span class="block-example__name">{{ blockExampleItem.name }}</span>
+{% if name is not empty %}
+  <span class="block-example__name">{{ name }}</span>
 {% endif %}
