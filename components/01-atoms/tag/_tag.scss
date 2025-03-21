@@ -1,0 +1,17 @@
+.tag {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  gap: rem(5px);
+  border-radius: rem(10px);
+  color: $color-primary;
+  background-color: $blue-e3;
+  padding: rem(5px 10px);
+  font-size: rem(13px);
+  font-weight: 600;
+
+  &--secondary {
+    color: $color-secondary;
+    background-color: $purple-f0;
+  }
+}

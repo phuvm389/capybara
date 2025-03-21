@@ -10,6 +10,14 @@ import './block-example';
  * Storybook Definition.
  */
 export default { title: 'Molecules/Block Example' };
+
+const argTypes = {
+  variants: {
+    options: ['block-example--variant-1', 'block-example--variant-2'],
+    control: { type: 'select' },
+  },
+};
+
 // Decorate items to makrup.
 let itemsData = [];
 blockExampleData.items.forEach((item) => {
@@ -37,12 +45,7 @@ const defaultData = {
 export const blockExample = {
   render: (args) => blockExampleTwig(args),
   args: { ...defaultData },
-  argTypes: {
-    variants: {
-      options: ['block-example--variant-1', 'block-example--variant-2'],
-      control: { type: 'select' },
-    },
-  },
+  argTypes,
 };
 
 // Don't show controls.
