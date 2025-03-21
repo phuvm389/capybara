@@ -3,3 +3,11 @@
     text-align: right;
   }
 }
+
+.section-space {
+  padding-block: 50px;
+
+  @include breakpoint(desktop) {
+    padding-block: 80px;
+  }
+}

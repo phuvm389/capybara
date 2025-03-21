@@ -1,15 +1,9 @@
 @import '../../00-base/functions/functions-import';
 
 .hero {
-  padding-block: 50px;
-
   @include breakpoint(tablet) {
     max-width: 440px;
     margin-inline: auto;
-  }
-
-  @include breakpoint(desktop) {
-    padding-block: 80px;
   }
 
   &__links,
@@ -27,5 +21,11 @@
     flex-flow: row wrap;
     justify-content: center;
     gap: rem(10px);
+  }
+
+  &--large {
+    @include breakpoint(tablet) {
+      max-width: 600px;
+    }
   }
 }
