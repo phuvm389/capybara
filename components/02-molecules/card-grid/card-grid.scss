@@ -1,0 +1,55 @@
+@import '../../00-base/functions/functions-import';
+
+.card-grid-item {
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: rem(10px);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  gap: rem(20px);
+  padding: rem(20px);
+
+  &__title {
+    margin: 0;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__years {
+    font-size: rem(14px);
+    color: rgba($color-text, 0.8);
+  }
+
+  &__body {
+    font-size: rem(16px);
+    margin-top: rem(10px);
+
+    > * {
+      margin: 0;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: rem(10px);
+  }
+}
+
+.card-grid {
+  &__grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: $space;
+  }
+
+  &__item {
+    flex: 1 0 rem(320px);
+  }
+}

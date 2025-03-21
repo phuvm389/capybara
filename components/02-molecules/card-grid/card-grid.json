@@ -1,0 +1,40 @@
+{
+  "sectionSpace": "section-space",
+  "items": [
+    {
+      "title": "TechCorp",
+      "subtitle": "Mobile App Developer",
+      "years": "2022 → 2024",
+      "body": "Developed and maintained various mobile applications for both iOS and Android platforms, focusing on user experience and performance optimization.",
+      "tags": "<span class=\"tag\">React Native</span><span class=\"tag tag--secondary\">iOS</span>"
+    },
+    {
+      "title": "TechCorp",
+      "subtitle": "Mobile App Developer",
+      "years": "2022 → 2024",
+      "body": "Developed and maintained various mobile applications for both iOS and Android platforms, focusing on user experience and performance optimization.",
+      "tags": "<span class=\"tag\">React Native</span><span class=\"tag tag--secondary\">iOS</span>"
+    },
+    {
+      "title": "TechCorp",
+      "subtitle": "Mobile App Developer",
+      "years": "2022 → 2024",
+      "body": "Developed and maintained various mobile applications for both iOS and Android platforms, focusing on user experience and performance optimization.",
+      "tags": "<span class=\"tag\">React Native</span><span class=\"tag tag--secondary\">iOS</span>"
+    },
+    {
+      "title": "TechCorp",
+      "subtitle": "Mobile App Developer",
+      "years": "2022 → 2024",
+      "body": "Developed and maintained various mobile applications for both iOS and Android platforms, focusing on user experience and performance optimization.",
+      "tags": "<span class=\"tag\">React Native</span><span class=\"tag tag--secondary\">iOS</span>"
+    },
+    {
+      "title": "TechCorp",
+      "subtitle": "Mobile App Developer",
+      "years": "2022 → 2024",
+      "body": "Developed and maintained various mobile applications for both iOS and Android platforms, focusing on user experience and performance optimization.",
+      "tags": "<span class=\"tag\">React Native</span><span class=\"tag tag--secondary\">iOS</span>"
+    }
+  ]
+}
