@@ -1,6 +1,7 @@
 import heroTwig from './hero.twig';
 import heroData from './hero.json';
 import heroLargeData from './hero--large.json';
+import { sectionSpace } from '../../01-atoms/atoms-arg-types';
 import './hero.scss';
 
 /**
@@ -13,10 +14,7 @@ const argTypes = {
     options: ['default', 'hero--large'],
     control: { type: 'select' },
   },
-  section_space: {
-    options: ['section-space', 'no-section-space'],
-    control: { type: 'select' },
-  },
+  sectionSpace,
 };
 
 export const hero = {
