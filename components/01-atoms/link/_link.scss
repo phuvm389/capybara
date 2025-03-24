@@ -1,15 +1,16 @@
 a {
   color: $color-text;
   text-decoration-color: $color-primary;
-  text-underline-offset: rem(6px);
   text-decoration-thickness: 2px;
+  text-underline-offset: rem(2px);
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    text-underline-offset: rem(12px);
+    text-underline-offset: rem(8px);
   }
 }
 
+%btn,
 .btn {
   display: inline-flex;
   cursor: pointer;

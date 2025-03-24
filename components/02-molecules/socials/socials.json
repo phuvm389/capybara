@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "<svg class=\"sprite-icon github\" ><use xlink:href=\"../dist/icons.svg#github\"></use></svg>github",
+      "url": "/",
+      "iconLink": true
+    },
+    {
+      "title": "<svg class=\"sprite-icon linkedin\" ><use xlink:href=\"../dist/icons.svg#linkedin\"></use></svg>linkedin",
+      "url": "/",
+      "iconLink": true
+    },
+    {
+      "title": "<svg class=\"sprite-icon mail\" ><use xlink:href=\"../dist/icons.svg#mail\"></use></svg>mail",
+      "url": "/",
+      "iconLink": true
+    }
+  ]
+}

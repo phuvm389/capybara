@@ -1,0 +1,126 @@
+@import '../../00-base/functions/functions-import';
+@import './main-menu';
+
+.header {
+  padding-block: rem(20px);
+
+  @include breakpoint(tablet) {
+    padding-block: rem(30px);
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__logo {
+    img {
+      height: rem(50px);
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__wrap {
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: rem(200px) 1fr;
+    }
+  }
+
+  &__menus {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    gap: rem(20px);
+
+    @include breakpoint(mobileOnly) {
+      background-color: $blue-f4;
+      position: fixed;
+      z-index: 98;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      transform: translateX(100%);
+    }
+  }
+
+  &__hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    display: grid;
+    place-items: center;
+    width: rem(40px);
+    height: rem(32px);
+    min-width: auto;
+    border-radius: 0;
+    z-index: 99;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: (33px);
+      height: rem(4px);
+      position: relative;
+      background: $color-text;
+      border-radius: 3px;
+      transition:
+        transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        all 0.5s ease;
+    }
+
+    &:hover {
+      box-shadow: none;
+
+      span {
+        filter: drop-shadow(0 0 3px $color-primary);
+      }
+    }
+  }
+
+  &.show-menu {
+    .header__hamburger {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(6px, -3px);
+          transform-origin: top left;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+          transform: rotate(0) scale(0.2);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(4px, 3px);
+          transform-origin: bottom left;
+        }
+      }
+    }
+
+    .header__menus {
+      @include breakpoint(mobileOnly) {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+body.show-menu {
+  @include breakpoint(mobileOnly) {
+    overflow: hidden;
+  }
+}

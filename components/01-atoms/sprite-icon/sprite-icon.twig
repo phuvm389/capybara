@@ -1,0 +1,5 @@
+{% set iconUrl = directory ? '/' ~ directory ~ '/dist/': '../dist/' %}
+
+<svg class="sprite-icon {{ iconName }}" >
+  <use xlink:href="{{ iconUrl }}icons.svg#{{ iconName }}"></use>
+</svg>

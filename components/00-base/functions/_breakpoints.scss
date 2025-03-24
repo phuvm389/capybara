@@ -16,6 +16,9 @@ $breakpoints: (
   mobileLandscape: (
     min-width: #{$mobile-landscape},
   ),
+  mobileOnly: (
+    max-width: #{$tablet - 1px},
+  ),
   tablet: (
     min-width: #{$tablet},
   ),

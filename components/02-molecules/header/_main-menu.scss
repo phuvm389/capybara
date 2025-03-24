@@ -1,0 +1,17 @@
+.main-menu {
+  ul {
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: flex-end;
+      gap: rem(20px);
+    }
+  }
+
+  a {
+    &:hover {
+      color: $color-primary;
+      filter: drop-shadow(0 0 3px $color-primary);
+    }
+  }
+}
