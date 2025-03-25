@@ -12,7 +12,7 @@ export const spriteIcon = {
   args: { ...spriteIconData },
   argTypes: {
     iconName: {
-      options: ['github', 'linkedin', 'mail'],
+      options: ['github', 'linkedin', 'mail', 'project', 'suitcase'],
       control: { type: 'select' },
     },
   },

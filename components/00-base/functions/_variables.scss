@@ -46,16 +46,10 @@ $color-primary: $blue;
 $color-secondary: $purple;
 $color-text: $gray;
 
+/* stylelint-disable */
 $background-wave: linear-gradient(
   60deg,
   rgba(12, 164, 165, 0.3) 0%,
   rgba(12, 164, 165, 0.1) 100%
 );
-
-/*
- * Use this on the outer wrapper of page-level elements.
- * It ensures consistent spacing between elements on the page.
- */
-@mixin space-stack-page {
-  margin-bottom: $space-double;
-}
+/* stylelint-enable */

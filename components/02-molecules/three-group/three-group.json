@@ -1,47 +1,47 @@
 {
-  "sectionSpace": "section-space",
+  "sectionSpace": "section-space--small",
   "items": [
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 1",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     },
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 2",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     },
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 3",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     },
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 4",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     },
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 5",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     },
     {
       "image": "<img src=\"https://picsum.photos/869/529\" alt=\"Image\" width=\"869\" height=\"529\" >",
       "title": "React Native Elements 6",
       "body": "A cross-platform UI toolkit for React Native with a set of customizable components.",
       "link": "<a class=\"btn btn--secondary\" href=\"#\">Read Blog Post</a>",
-      "tags": "<span class=\"tag\">Android</span><span class=\"tag tag--secondary\">Encryption</span>"
+      "tags": "<span class=\"tag-n\">Android</span><span class=\"tag-n tag-n--secondary\">Encryption</span>"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "sectionSpace": "section-space",
+  "sectionSpace": "section-space--top--small",
   "variants": "",
-  "title": "Hello, I'm Tam!",
-  "body": "<div>I build fun stuff on the web,</div><div class=\"text--right\">and sometimes write about it.</div>",
-  "links": "<a class=\"btn btn--icon\" href=\"#\">Projects</a><a class=\"btn btn--secondary btn--icon\" href=\"#\">Experience</a> "
+  "title": "Work Experience",
+  "body": "<p>Over the past 12+ years, I've worked on a lot of cool projects with great people.</p>",
+  "links": "<a class=\"btn btn--secondary btn--icon\" href=\"#\">View Resume</a> "
 }

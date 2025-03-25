@@ -1,19 +1,9 @@
 @import '../../00-base/functions/functions-import';
 
 .hero {
-  @include breakpoint(tablet) {
-    max-width: 440px;
-    margin-inline: auto;
-  }
-
-  &__links,
-  &__title {
-    text-align: center;
-  }
-
-  &__body {
-    @include text--large;
-  }
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
 
   &__links {
     margin-top: $space;
@@ -23,9 +13,23 @@
     gap: rem(10px);
   }
 
-  &--large {
+  &__body {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--header {
     @include breakpoint(tablet) {
-      max-width: 600px;
+      max-width: 440px;
+    }
+
+    .hero__body {
+      @include text--large;
+
+      @include breakpoint(tablet) {
+        text-align: left;
+      }
     }
   }
 }

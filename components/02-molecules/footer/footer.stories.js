@@ -11,7 +11,6 @@ import './footer.scss';
  */
 export default { title: 'Molecules/Footer' };
 
-const argTypes = {};
 const socialsMenu = menuTwig(socialsData);
 const socials = socialsTwig({ links: socialsMenu });
 
@@ -21,9 +20,4 @@ const footerData = {
   socials,
 };
 
-// Show controls.
-export const footer = {
-  render: (args) => footerTwig(args),
-  args: { ...footerData },
-  argTypes,
-};
+export const footer = () => footerTwig({ ...footerData });

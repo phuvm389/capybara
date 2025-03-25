@@ -40,4 +40,11 @@ a {
       box-shadow: 0 0 1px 7px rgba($color-secondary, 0.3);
     }
   }
+
+  &--icon {
+    svg {
+      width: rem(24px);
+      height: rem(24px);
+    }
+  }
 }

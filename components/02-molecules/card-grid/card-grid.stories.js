@@ -34,8 +34,10 @@ const defaultData = {
 };
 
 // Show controls.
-export const cardGrid = {
+export const cardGridDoc = {
   render: (args) => cardGridTwig(args),
   args: { ...defaultData },
   argTypes,
 };
+
+export const cardGrid = () => cardGridTwig({ ...defaultData });

@@ -34,8 +34,10 @@ const defaultData = {
 };
 
 // Show controls.
-export const threeGroup = {
+export const threeGroupDoc = {
   render: (args) => threeGroupTwig(args),
   args: { ...defaultData },
   argTypes,
 };
+
+export const threeGroup = () => threeGroupTwig({ ...defaultData });

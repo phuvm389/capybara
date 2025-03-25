@@ -12,8 +12,10 @@ const argTypes = {
   sectionSpace,
 };
 
-export const textImage = {
+export const textImageDoc = {
   render: (args) => textImageTwig(args),
   args: { ...textImageData },
   argTypes,
 };
+
+export const textImage = () => textImageTwig({ ...textImageData });

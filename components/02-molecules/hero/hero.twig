@@ -1,7 +1,13 @@
-<div class="hero {{ variants }} {{ section_space }}">
+<div class="hero {{ variants }} {{ sectionSpace }}">
   <div class="container">
-    <h1 class="hero__title">{{ title }}</h1>
-    <div class="hero__body">{{ body }}</div>
-    <div class="hero__links">{{ links }}</div>
+    {% if title is not empty %}
+      <h1 class="hero__title">{{ title }}</h1>
+    {% endif %}
+    {% if body is not empty %}
+      <div class="hero__body">{{ body }}</div>
+    {% endif %}
+    {% if links is not empty %}
+      <div class="hero__links">{{ links }}</div>
+    {% endif %}
   </div>
 </div>

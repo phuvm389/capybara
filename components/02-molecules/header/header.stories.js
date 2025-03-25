@@ -14,8 +14,6 @@ import './header';
  */
 export default { title: 'Molecules/Header' };
 
-const argTypes = {};
-
 const mainMenu = menuTwig(mainMenuData);
 const socialsMenu = menuTwig(socialsData);
 const socials = socialsTwig({ links: socialsMenu });
@@ -26,9 +24,4 @@ const headerData = {
   socials,
 };
 
-// Show controls.
-export const header = {
-  render: (args) => headerTwig(args),
-  args: { ...headerData },
-  argTypes,
-};
+export const header = () => headerTwig({ ...headerData });

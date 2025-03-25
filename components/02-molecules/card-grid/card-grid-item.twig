@@ -1,9 +1,19 @@
 <div class="card-grid-item">
   <div class="card-grid-item__content">
-    <h3 class="card-grid-item__title">{{ title }}</h3>
-    <div class="card-grid-item__subtitle">{{ subtitle }}</div>
-    <div class="card-grid-item__years">{{ years }}</div>
-    <div class="card-grid-item__body">{{ body }}</div>
+    {% if title is not empty %}
+      <h3 class="card-grid-item__title">{{ title }}</h3>
+    {% endif %}
+    {% if subtitle is not empty %}
+      <div class="card-grid-item__subtitle">{{ subtitle }}</div>
+    {% endif %}
+    {% if years is not empty %}
+      <div class="card-grid-item__years">{{ years }}</div>
+    {% endif %}
+    {% if body is not empty %}
+      <div class="card-grid-item__body">{{ body }}</div>
+    {% endif %}
   </div>
-  <div class="card-grid-item__tags">{{ tags }}</div>
+  {% if tags is not empty %}
+    <div class="card-grid-item__tags">{{ tags }}</div>
+  {% endif %}
 </div>

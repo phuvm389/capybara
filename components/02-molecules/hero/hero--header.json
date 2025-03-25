@@ -1,0 +1,7 @@
+{
+  "sectionSpace": "section-space",
+  "variants": "hero--header",
+  "title": "Hello, I'm Tam!",
+  "body": "<div>I build fun stuff on the web,</div><div class=\"text--right\">and sometimes write about it.</div>",
+  "links": "<a class=\"btn btn--icon\" href=\"#\"><svg class=\"sprite-icon project\" ><use xlink:href=\"../dist/icons.svg#project\"></use></svg>Projects</a><a class=\"btn btn--secondary btn--icon\" href=\"#\"><svg class=\"sprite-icon suitcase\" ><use xlink:href=\"../dist/icons.svg#suitcase\"></use></svg>Experience</a>"
+}

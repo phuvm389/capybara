@@ -20,6 +20,12 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  position: relative;
+  z-index: 1;
+  // background-color: $blue-f4;
+}
+
 .container {
   margin-inline: rem(15px);
 
